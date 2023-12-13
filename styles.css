@@ -2,26 +2,35 @@
   --accentColor: #7531ff;
 }
 
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Google Sans", system-ui, serif, "Courier New", Courier,
     monospace;
   line-height: 1.5;
-  padding: 2rem 1rem;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 a {
   text-decoration: none;
 }
 
-.w-75 {
+.container {
+  margin: 0 auto;
   width: 75%;
+  @media (max-width: 481px) {
+    width: 100%;
+  }
 }
 
-.m-inline-auto {
-  margin: 0 auto;
+.p-inline-10 {
+  padding-inline: 10px;
+}
+
+.container img {
+  max-width: 100%;
 }
 
 .text-center {
